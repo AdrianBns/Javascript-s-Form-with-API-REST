@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='../css/index.css'>
+</head>
+
+<body>
+
+  <header>
+    <aside id="menu">
+      <button  id="showPost" >POST </button>
+      <button id="hiddenPost" >Hidden POST</button>
+      <button id="showPut" >PUT</button>
+      <button id="hiddenPut" >Hidden PUT</button>
+      <button id="showDelete">SEARCH</button>
+    </aside>
+    <section class="busqueda">
+      <input id="searchBar" type="text" placeholder="Búscate">
+    </section>
+  </header>
+
+
+  <main>
+
+  <section id="post">
+    <form id="form-post">
+      <p>Formulario de envío de datos</p>
+      <label for="" name="nombre">Nombre</label>
+      <input type="text" name="nombre" placeholder="nombre"><br>
+      <label for="" name="apellidos">Apellidos</label>
+      <input type="text" name="apellidos"placeholder="apellidos"><br>
+      <label for="" name="mobilephone">Teléfono móvil</label>
+      <input type="text" name="mobilephone" placeholder="Telefono movil"><br>
+      <label for="" name="phone">Teléfono fijo</label>
+      <input type="text" name="phone" placeholder="telefono fijo"><br>
+      <label for="" name="familia">Hijos/as</label>
+      <input type="text" name="familia"placeholder="Hijos/as"><br>
+      <input type="button" value="Post" onclick="crearCliente()">
+    </form>
+  </section>
+
+  <section id="put">
+    <p>Formulario de actualización de datos</p>
+    <form id="form-put" action="">
+      <label for="" name="nombre">Nombre</label>
+      <input type="text" name="nombre" placeholder="nombre"><br>
+      <label for="" name="apellidos">Apellidos</label>
+      <input type="text" name="apellidos" placeholder="apellidos"><br>
+      <label for="" name="mobilephone">Teléfono móvil</label>
+      <input type="text" name="mobilephone" placeholder="Telefono movil">
+      <label for="" name="phone">Teléfono fijo</label>
+      <input type="text" name="phone" placeholder="telefono fijo"><br>
+      <label for="" name="familia">Hijos/as</label>
+      <input type="text" name="familia" placeholder="Hijos/as"><br>
+      <input type="button" name="post" value="Haz Put"><br>
+    </form>
+  </section>
+
+  <section id="search">
+
+      <div>HOLA, AQUÍ VIENEN LOS DATOS</div>
+      <div id="datos"></div>
+  </section>
+
+
+    </main>
+
+  <footer></footer>
+
+
+
+
+  <script src='../js/index.js'></script>
+</body>
+</html>

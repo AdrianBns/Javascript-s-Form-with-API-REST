@@ -1,0 +1,148 @@
+:root{
+  --main-color: #82DBD8;
+  --button-border-color: #2F8F9D;
+}
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: #B3E8E5;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-color);
+}
+
+aside{
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--main-color);
+  margin: 15px;
+  align-content: center;
+  align-items: center;
+}
+
+aside button {
+  margin: 10px;
+}
+
+section {
+  padding: 15px;
+  margin: 5px;
+}
+
+#post{
+  display: none;
+}
+
+#hiddenPost{
+  display: none;
+}
+
+#put{
+  display:none;
+}
+
+#hiddenPut{
+display: none;
+}
+
+#form-post{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 500px;
+}
+
+#form-put{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 500px;
+}
+
+#showPost{
+  max-width: 50px;
+  border-radius: 20%;
+  border-color: #2F8F9D;
+  color:white;
+  background-color: #3BACB6;
+  height: 50px;
+  margin: 6px;
+}
+#showPost:hover{
+  background-color:#2F8F9D;
+  color:white
+}
+
+#hiddenPost{
+  max-width: 70px;
+  border-radius: 20%;
+  border-color: #2F8F9D;
+  color:white;
+  background-color: #3BACB6;
+  height: 50px;
+  margin: 6px;
+}
+#hiddenPost:hover{
+  background-color:#2F8F9D;
+  color:white
+}
+
+#hiddenPut{
+  max-width: 70px;
+  border-radius: 20%;
+  border-color: #2F8F9D;
+  color:white;
+  background-color: #3BACB6;
+  height: 50px;
+  margin: 6px;
+}
+#hiddenPut:hover{
+  background-color:#3BACB6;
+  color:white
+}
+
+#showPut{
+  max-width: 50px;
+  width: 45px;
+  border-radius: 20%;
+  border-color: var(--button-border-color);
+  color:white;
+  background-color: #3BACB6;
+  height: 50px;
+}
+
+#showPut:hover{
+  background-color:#3BACB6;
+  color:white
+}
+
+#showDelete{
+  max-width: 200px;
+  border-radius: 20%;
+  border-color: #2F8F9D;
+  color:white;
+  background-color: #3BACB6;
+  height: 50px;
+}
+
+#showDelete:hover{
+  background-color:#3BACB6;
+  color:white
+}
+
+#searchBar{
+  max-width: 1500px;
+  border-radius: 20px;
+  border-color: var(--button-border-color);
+  color:white;
+  background-color: #f5f5f0;
+  height: 30px;
+  color: black;
+  display:none;
+  text-align: center;
+}
+
