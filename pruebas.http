@@ -1,6 +1,0 @@
-@url = http://localhost:8084/users
-
-###
-
-GET {{url}}
-Content-Type: application/json
