@@ -2,6 +2,7 @@
   "name": "pruebas",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "./js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,12 +10,22 @@
     "startAll": "nodemon app-all",
     "instalar": "npm i"
   },
-  "type": "module",
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "espree": "^9.3.2",
+    "express": "^4.17.1",
+    "prettier": "^2.6.2"
+  },
+  "devDependencies": {
+    "eslint": "8.15.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-promise": "^6.0.0"
   }
 }

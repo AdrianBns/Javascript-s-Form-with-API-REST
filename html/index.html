@@ -11,16 +11,16 @@
 <body>
 
   <header>
+
     <aside id="menu">
       <button  id="showPost" >POST </button>
       <button id="hiddenPost" >Hidden POST</button>
       <button id="showPut" >PUT</button>
       <button id="hiddenPut" >Hidden PUT</button>
-      <button id="showDelete">SEARCH</button>
+      <button id="searchButton">SEARCH</button>
+      <button id="hiddensearchButton" >Hidden Search</button>
     </aside>
-    <section class="busqueda">
-      <input id="searchBar" type="text" placeholder="Búscate">
-    </section>
+
   </header>
 
 
@@ -39,13 +39,14 @@
       <input type="text" name="phone" placeholder="telefono fijo"><br>
       <label for="" name="familia">Hijos/as</label>
       <input type="text" name="familia"placeholder="Hijos/as"><br>
-      <input type="button" value="Post" onclick="crearCliente()">
+      <input type="button" value="Post" class="post-button" onclick="crearCliente()">
     </form>
   </section>
 
   <section id="put">
-    <p>Formulario de actualización de datos</p>
+
     <form id="form-put" action="">
+      <p>Formulario de actualización de datos</p>
       <label for="" name="nombre">Nombre</label>
       <input type="text" name="nombre" placeholder="nombre"><br>
       <label for="" name="apellidos">Apellidos</label>
@@ -56,15 +57,17 @@
       <input type="text" name="phone" placeholder="telefono fijo"><br>
       <label for="" name="familia">Hijos/as</label>
       <input type="text" name="familia" placeholder="Hijos/as"><br>
-      <input type="button" name="post" value="Haz Put"><br>
+      <input type="button" name="post" class="put-button" value="Haz Put"><br>
     </form>
   </section>
-
-  <section id="search">
-
-      <div>HOLA, AQUÍ VIENEN LOS DATOS</div>
+  <section class="busqueda">
+    <div id="searchBar">
+      <input  id="searchBarText"type="text" placeholder="Búscate">
       <div id="datos"></div>
+    </div>
+
   </section>
+
 
 
     </main>
@@ -75,5 +78,6 @@
 
 
   <script src='../js/index.js'></script>
+  <script src='../js/botones.js'></script>
 </body>
 </html>
